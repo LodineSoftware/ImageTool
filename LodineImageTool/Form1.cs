@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Drawing.Drawing2D;
 using System.Drawing.Imaging;
 
@@ -74,6 +75,15 @@ namespace LodineImageTool
             }
 
             return destImage;
+        }
+
+        private void openGithubButton_Click(object sender, EventArgs e)
+        {
+            Process.Start(new ProcessStartInfo
+            {
+                FileName = "https://github.com/LodineSoftware/ImageTool",
+                UseShellExecute = true,
+            });
         }
     }
 }

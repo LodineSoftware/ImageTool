@@ -33,6 +33,7 @@
             copyrightText = new Label();
             tabControl1 = new TabControl();
             aboutPage = new TabPage();
+            openGithubButton = new Button();
             label6 = new Label();
             label5 = new Label();
             resizePage = new TabPage();
@@ -46,7 +47,6 @@
             heightUpDown = new NumericUpDown();
             label1 = new Label();
             saveTypeExtensions = new ComboBox();
-            openGithubButton = new Button();
             tabControl1.SuspendLayout();
             aboutPage.SuspendLayout();
             resizePage.SuspendLayout();
@@ -113,6 +113,17 @@
             aboutPage.TabIndex = 1;
             aboutPage.Text = "About";
             aboutPage.UseVisualStyleBackColor = true;
+            // 
+            // openGithubButton
+            // 
+            openGithubButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            openGithubButton.Location = new Point(523, 243);
+            openGithubButton.Name = "openGithubButton";
+            openGithubButton.Size = new Size(84, 37);
+            openGithubButton.TabIndex = 2;
+            openGithubButton.Text = "Github";
+            openGithubButton.UseVisualStyleBackColor = true;
+            openGithubButton.Click += openGithubButton_Click;
             // 
             // label6
             // 
@@ -251,16 +262,6 @@
             saveTypeExtensions.Name = "saveTypeExtensions";
             saveTypeExtensions.Size = new Size(608, 29);
             saveTypeExtensions.TabIndex = 0;
-            // 
-            // openGithubButton
-            // 
-            openGithubButton.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
-            openGithubButton.Location = new Point(523, 243);
-            openGithubButton.Name = "openGithubButton";
-            openGithubButton.Size = new Size(84, 37);
-            openGithubButton.TabIndex = 2;
-            openGithubButton.Text = "Github";
-            openGithubButton.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
